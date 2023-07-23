@@ -11,7 +11,7 @@
 /* NAV Styles */
 
 .nav-bar {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     max-height: 130px;
@@ -77,14 +77,14 @@
 /* *********************************** */
 
 .banner-section {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-image: url("../images/Group14.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .banner-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -94,13 +94,13 @@
 }
 
 .banner-content {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     text-align: start;
     width: 50%;
 }
 
 .banner-img {
-    border: 2px solid seagreen;
+    /* border: 2px solid seagreen; */
     width: 50%;
 
 }
@@ -174,13 +174,13 @@
 
 .gamer-section {
 
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 
 
 }
 .gamer-section-container {
-    border: 2px solid #a9144b;    
+    /* border: 2px solid #a9144b;     */
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -189,7 +189,7 @@
 }
 
 .gamer-image{
-    border: 3px solid rgb(54, 17, 129);
+    /* border: 3px solid blue; */
     width: 60%;
 }
 
@@ -199,7 +199,7 @@
 }
 
 .gamer-content {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     text-align: right;
     /* width: 520px; */
     width: 40%;
@@ -260,10 +260,10 @@
 /* *********************************** */
 
 .funny-video-section{
-    border: 4px solid black;
+    /* border: 4px solid black; */
 }
 .funny-video-section-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 80%;
     margin: 40px auto;
     align-items: center;
@@ -280,7 +280,7 @@
 }
 
 .title{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: inline-flex;
     gap: 10px;
     /* margin: auto; */
@@ -317,8 +317,10 @@
     
 }
 .video-card img {
-    width: 100%;
+    width: 90%;
 }
+
+
 
 
 
@@ -372,14 +374,13 @@
 
 
 
-
+    /* Gamer Section */
     .gamer-section-container {
         flex-direction: column;
         width: 100%;
     }
 
     .gamer-content {
-        border: 2px solid salmon;
         text-align: center;
         width: 100%;
         padding: 30px;
@@ -410,7 +411,7 @@
         width: 100%;
     }
 
-    /* Gamer section responsive */
+    /* FUNNY VIDEO responsive */
     .funny-video-section-container {        
         width: 100%;
     }
@@ -423,5 +424,113 @@
         font-size: 1.4rem;    
     }
 
+    .video-card p {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+
+
+/* MEDIUM DEVIDE */
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    .nav-bar {
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        max-height: 420px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-bar li {
+        margin-top: 40px;  
+    }
+
+
+
+    .banner-content, .banner-img {
+        width: 100%;
+    }
+
+    .banner-section {
+        background-image: none;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        width: 100%;
+        
+    }
+
+    .banner-content {
+        background-image: url('../images/Group14.png');
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-top: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    /* Gamer Section */
+    .gamer-section-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gamer-content {
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+
+    }
+
+    .gamer-content h2 {   
+        font-size: 1.6rem;    
+    }
+    
+    .gamer-content .summary {
+        font-size: .8rem;        
+    }
+    
+    .gamer-content .bold-sentence {
+        font-size: 1.1rem;    }
+
+    
+    .gamer-content button {
+        border-radius: 28px;        
+        padding: 11px 13px;
+        font-size: .8rem;
+        cursor: pointer;
+
+        }
+
+    .gamer-image {
+        width: 100%;
+    }
+
+
+    /* FUNNY VIDEO responsive */
+    .funny-video-section-container {        
+        width: 100%;
+    }
+
+    .video-container .video-card {
+        font-size:.8rem;
+        text-align: center;
+    }
+    .title h2 {
+        font-size: 2.1rem;    
+    }
+
+    .video-card p {
+        width: 90%;
+        margin: auto;
+    }
 
 }
