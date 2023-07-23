@@ -265,7 +265,7 @@
 .funny-video-section-container {
     border: 2px solid red;
     width: 80%;
-    margin: 70px auto;
+    margin: 40px auto;
     align-items: center;
     text-align: center;
 
@@ -285,8 +285,8 @@
     gap: 10px;
     /* margin: auto; */
     /* text-align: center; */
-    align-items: center; 
-    font-size: 5.6px;
+    /* align-items: center;  */
+    /* font-size: 5.6px; */
 }
 
 .title h2 {
@@ -313,6 +313,8 @@
 .video-container .video-card {
     
     text-align: start;
+    /* font-size:.8rem; */
+    
 }
 .video-card img {
     width: 100%;
@@ -404,10 +406,21 @@
 
         }
 
-
-
     .gamer-image {
         width: 100%;
+    }
+
+    /* Gamer section responsive */
+    .funny-video-section-container {        
+        width: 100%;
+    }
+
+    .video-container .video-card {
+        font-size:.8rem;
+        text-align: center;
+    }
+    .title h2 {
+        font-size: 1.4rem;    
     }
 
 
